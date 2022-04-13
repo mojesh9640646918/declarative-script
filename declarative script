@@ -1,0 +1,11 @@
+// Declarative //
+pipeline {
+ agent {label 'my_slave'}
+    stages {
+        stage('Example') {
+            steps { 
+                echo 'Hello World'
+            }
+        }
+    }
+}
